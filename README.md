@@ -12,5 +12,5 @@ FALL Data Analytics Course
 |6/18|Data Aggregation in SQL|6/20|Using Subselects in SQL|
 |6/25|Applying Functions in SQL|6/27|Mozilla Firefox Presentations|
 |7/2|Fundamentals of Tableau|7/9|Organizing Data Pane|
-|7/16|Production line of charts|7/18|Dashboarding in Tableau|
-|7/23|Flex day, review, catchup, workshop|7/25|Presentation|
+|7/11|Production line of charts|7/16|Dashboarding in Tableau|
+|7/18|Flex day, review, catchup, workshop|7/23|Presentation|
