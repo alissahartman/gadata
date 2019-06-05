@@ -27,34 +27,48 @@ NCHAR,NVARCHAR2,CLOB, or NCLOB. Using TO_CHAR we are converting the data type to
 																			
 									
 													
-TO_CHAR—NUMBER
+TO_CHAR(NUMBER)
 ------------------
-Syntax: TO_CHAR(n, format_model, nls_parms)													
-Parameters: n is a number (required). The parameter format_model is optional. A format model consists of one or more format elements, which you saw earlier listed in Table 6-1. The nls_parms value is the same parameter you saw earlier with the TO_NUMBER function.													
-Process: Transforms n into a character string, using the optional format model for guidance as to how to format the output with any special characters that may be desired, such as dollar signs or other financial symbols, special handling of negative numbers, and so on.													
+Syntax: TO_CHAR(n, format_model, nls_parms)												
+Parameters: n is a number (required). The parameter format_model is optional. 
+A format model consists of one or more format elements,
+The nls_parms value is the same parameter you saw earlier with the TO_NUMBER function.													
+Process: Transforms n into a character string, using the optional format model for guidance as to how to format the output with any special characters that may be desired, such as dollar signs or other financial symbols, special handling of negative numbers.
 Output: Character.													
+
 Example: Format the number 198 with a dollar sign and penny specification.													
 													
-SELECT TO_CHAR(198,'$999.99') FROM DUAL;													
+	SELECT TO_CHAR(198,'$999.99') FROM DUAL;													
 													
-TO_CHAR(198,'$999.99')													
-$198.00													
-TO_CHAR—DATE													
+|TO_CHAR(198,'$999.99')|													
+|:--------------------:|
+|$198.00|													
+
+
+
+
+TO_CHAR(DATE)
+--------------------------
 Syntax: TO_CHAR(d, format_model, nls_parms)													
-Parameters: d is a date or a date interval (required). The parameter format_model is optional and can be used to format data in a variety of ways. See Table 6-3 for details on format models for date data types. The nls_parms parameter is the same as you saw earlier for the TO_NUMBER function.													
-Element	Description												
-AD/A.D.													
-BC/B.C.	Anno Domini or Before Christ indicator, with or without periods.												
-AM/A.M.													
-PM/P.M.	Morning or afternoon hours, with or without periods.												
-CC/SCC	Century.												
-D	Day of the week, 1 through 7.												
-DAY	The name of the day spelled out.												
-DD	Day of the month, 1 through 31.												
-DDD	Day of the year, 1 through 366.												
-DL	Long date format, as determined by the NLS_DATE_FORMAT parameter. The appearance is determined by the NLS_TERRITORY and NLS_LANGUAGE parameters. Sample AMERICAN_AMERICA output is "Saturday, July 27, 2019."												
-DS	Short date format. Appearance is determined by the NLS_TERRITORY and NLS_LANGUAGE parameters. Sample AMERICAN_AMERICA output is "7/27/2019."												
-DY	Abbreviated name of day, such as SUN, MON, TUE, and so on.												
+Parameters: d is a date or a date interval (required). 
+The parameter format_model is optional and can be used to format data in a variety of ways. 
+The nls_parms parameter is the same as you saw earlier for the TO_NUMBER function.													
+|Element|Description|
+|:-----:|:---------:|
+|AD/A.D.||													
+|BC/B.C.|Anno Domini or Before Christ indicator, with or without periods.|							
+|AM/A.M.|													
+|PM/P.M.|Morning or afternoon hours, with or without periods.|
+|CC/SCC|Century.|												
+|D|Day of the week, 1 through 7.|												
+|DAY|The name of the day spelled out.|												
+|DD|Day of the month, 1 through 31.|												
+|DDD|Day of the year, 1 through 366.|												
+|DL|Long date format, as determined by the NLS_DATE_FORMAT parameter.| 
+The appearance is determined by the NLS_TERRITORY and NLS_LANGUAGE parameters. Sample AMERICAN_AMERICA output is "Saturday, July 27, 2019."												
+|DS|Short date format. Appearance is determined by the NLS_TERRITORY and NLS_LANGUAGE parameters.| 
+Sample AMERICAN_AMERICA output is "7/27/2019."												
+|DY|Abbreviated name of day, such as SUN, MON, TUE, and so on.|												
 E	Abbreviated era name.												
 EE	Full era name.												
 FF	Fractional seconds.												
@@ -132,7 +146,7 @@ The format model is the secret to extracting the time values from SYSDATE. Here�
 SELECT TO_CHAR(SYSDATE,'HH24:MI:SS AM') FROM DUAL;													
 													
 TO_CHAR(SYSDATE,'HH24:MI:SSAM')													
--------------------------------													
+												
 17:48:16 PM													
 Notice in this example we can use either AM or PM to indicate where we want the morning/afternoon indicator to be located and whether we want it to include periods. Whether we use AM or PM makes no difference; the appropriate indicator will appear wherever the format model directs, as shown in the preceding example.													
 													
