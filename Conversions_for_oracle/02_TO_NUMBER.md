@@ -25,18 +25,15 @@ In this example, the incoming value shows a decimal point to mark â€œthousandsâ€
 |:------|:------|:----------|
 |, .|9,999.99|Commas and decimal points will pass through wherever they are included.|		
 |$|$999.99|Leading dollar sign.|
-	
-	
-	0	99.99	Leading or trailing 0.			
-	9	999	Any digit.			
-	B	B999	Leading blank for integers.			
-	C	C999	The ISO currency symbol as defined in the NLS_ISO_CURRENCY parameter.			
-	D	999D99	Returns the current decimal character as defined by the NLS_NUMERIC_CHARACTERS parameter. The default value is a period.			
-	EEEE	9.9EEE	Returns a value in scientific notation.			
-	G	9G999	Returns the group separator (e.g., a comma).			
-	L	L999	Returns the local currency symbol.			
-	MI	999MI	Returns negative value with trailing minus sign; returns positive value with a trailing blank.			
-	PR	999PR	Returns negative values in angle brackets.			
+|0|99.99|Leading or trailing 0.|			
+|9|999|Any digit.|			
+|B|B999|Leading blank for integers.|			
+|C|C999|The ISO currency symbol as defined in the NLS_ISO_CURRENCY parameter.|			
+|D|999D99|Returns the current decimal character as defined by the NLS_NUMERIC_CHARACTERS parameter. The default value is a period.|	|EEEE|9.9EEE|Returns a value in scientific notation.|			
+|G|9G999|Returns the group separator (e.g., a comma).|			
+|L|L999|Returns the local currency symbol.|			
+|MI|999MI|Returns negative value with trailing minus sign; returns positive value with a trailing blank.|			
+|PR|999PR|Returns negative values in angle brackets.|			
 	RN					
 	rn	RN	Returns values in Roman numerals, uppercase. Put RN in lowercase (as in "rn") for Roman numerals in lowercase.			
 	S (prefix)	S9999	Returns negative values with a leading minus sign, positive values with a leading positive sign.			
