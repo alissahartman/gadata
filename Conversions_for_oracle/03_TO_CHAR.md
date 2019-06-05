@@ -11,8 +11,8 @@ TO_CHAR—CHARACTER
 Syntax: TO_CHAR(c)													
 Parameters: c is either an NCHAR, an NVARCHAR2, a CLOB, or an NCLOB.									Process: Transforms the incoming parameter into a VARCHAR2.										Output: VARCHAR2.													
 Example:													
-	SELECT TO_CHAR('Hello') AS NEW FROM DUAL;											|NEW|
-|:-:|
+	SELECT TO_CHAR('Hello') AS NEW FROM DUAL;											|NEW  |
+|:---:|
 |Hello|
 
 For the TO_CHAR it may not seem like muched happened because most of this is behind the scenes. Remember we have a field that is 
