@@ -4,17 +4,18 @@ TO_NUMBER
 	ransform e1 from an expression, perhaps a character string, into a numeric value, using format_model to determine what format e1 may take and where to extract the numeric values from among the formatting information.					
 	Output: Numeric.					
 Example: In the example that follows, our starting value is a string, '$17,000.23'. This isn’t a numeric data type but a character string containing a dollar sign and a comma. The format model here explains that the dollar sign is a symbol and makes it clear where the significant numeric data can be found in the source column. The 9 element in the following example is not a literal number 9 but rather an element of the format model that indicates the presence of any digit. It is repeated to indicate the upper bound of acceptable values. Finally, the output is displayed—a raw numeric value extracted from the character string '$17,000.23'.						
-	SELECT TO_NUMBER('$17,000.23','$999,999.99')
+	*SELECT TO_NUMBER('$17,000.23','$999,999.99') AS NUMBER
 	
-	FROM DUAL;
+	*FROM DUAL;
 	
-	TO_NUMBER('$17,000.23','$999,999.99')
+	*TO_NUMBER('$17,000.23','$999,999.99')
 	
 	17000.23					
 						
 Here is a similar example showing the use of the nls_parms parameter:						
 	SELECT TO_NUMBER('17.000,23', 999G999D99', nls_numeric_characters='',.'' ') AS REFORMATTED_NUMBER					FROM DUAL;	
-|REFORMATTED_NUMBER|					
+|REFORMATTED_NUMBER|
+|------------------|
 |17000.23|					
 						
 In this example, the incoming value shows a decimal point to mark “thousands” and the comma to mark the decimal point. The nls_parms value clarifies this to the TO_NUMBER function, along with the format mask, and the incoming value is interpreted and translated, as shown in the displayed output.						
