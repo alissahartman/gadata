@@ -6,22 +6,22 @@ There are three versions of TO_CHAR:
 	TO_CHAR(Date)												
 The following sections describe each of the three TO_CHAR functions.									
 													
-##TO_CHAR—CHARACTER
+TO_CHAR—CHARACTER
 --------------------
 Syntax: TO_CHAR(c)													
-Parameters: c is either an NCHAR, an NVARCHAR2, a CLOB, or an NCLOB.													
-Process: Transforms the incoming parameter into a VARCHAR2.													
-Output: VARCHAR2.													
+Parameters: c is either an NCHAR, an NVARCHAR2, a CLOB, or an NCLOB.									Process: Transforms the incoming parameter into a VARCHAR2.										Output: VARCHAR2.													
 Example:													
+	SELECT TO_CHAR('Hello') AS NEW FROM DUAL;											|NEW|
+|:-:|
+|Hello|
+
+For the TO_CHAR it may not seem like muched happened because most of this is behind the scenes. Remember we have a field that is 
+NCHAR,NVARCHAR2,CLOB, or NCLOB. Using TO_CHAR we are converting the data type to VARCHAR which will help reduced unused space and VARCHAR leans itself to being more friendly to other functions. 
+																			
+									
 													
-SELECT TO_CHAR('Hello') FROM DUAL;													
-													
-TO_CHAR('HELLO')													
-												
-Hello													
-There are situations where you’ll work with data types that cannot accept, for example, CLOB data but can accept the output of TO_CHAR, such as a VARCHAR2 data type.													
-													
-TO_CHAR—NUMBER													
+TO_CHAR—NUMBER
+------------------
 Syntax: TO_CHAR(n, format_model, nls_parms)													
 Parameters: n is a number (required). The parameter format_model is optional. A format model consists of one or more format elements, which you saw earlier listed in Table 6-1. The nls_parms value is the same parameter you saw earlier with the TO_NUMBER function.													
 Process: Transforms n into a character string, using the optional format model for guidance as to how to format the output with any special characters that may be desired, such as dollar signs or other financial symbols, special handling of negative numbers, and so on.													
