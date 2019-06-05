@@ -53,6 +53,7 @@ Syntax: TO_CHAR(d, format_model, nls_parms)
 Parameters: d is a date or a date interval (required). 
 The parameter format_model is optional and can be used to format data in a variety of ways. 
 The nls_parms parameter is the same as you saw earlier for the TO_NUMBER function.													
+
 |Element|Description|
 |:-----:|:---------:|
 |AD/A.D.|-|
