@@ -1,20 +1,13 @@
-CHARACTER													
-	TO_CHAR-Character												
-	TO_CHAR-Number												
-	TO_CHAR-Date												
-													
 TO_CHAR													
-The TO_CHAR function converts data from various data types to character data. 
-
-													
+The TO_CHAR function converts data from various data types to character data. 	
 There are three versions of TO_CHAR: 
-first parameter is a character string, 
-first parameter is a date, 
-whose first parameter is numeric.													
+	TO_CHAR(Character)												
+	TO_CHAR(Number)												
+	TO_CHAR(Date)												
+The following sections describe each of the three TO_CHAR functions.									
 													
-The following sections describe each of the three TO_CHAR functions.													
-													
-TO_CHAR—CHARACTER													
+##TO_CHAR—CHARACTER
+--------------------
 Syntax: TO_CHAR(c)													
 Parameters: c is either an NCHAR, an NVARCHAR2, a CLOB, or an NCLOB.													
 Process: Transforms the incoming parameter into a VARCHAR2.													
@@ -24,7 +17,7 @@ Example:
 SELECT TO_CHAR('Hello') FROM DUAL;													
 													
 TO_CHAR('HELLO')													
-----------------													
+												
 Hello													
 There are situations where you’ll work with data types that cannot accept, for example, CLOB data but can accept the output of TO_CHAR, such as a VARCHAR2 data type.													
 													
