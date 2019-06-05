@@ -22,7 +22,7 @@ In this example, the incoming value shows a decimal point to mark â€œthousandsâ€
 						
 						
 	|Element|Example|Description|
-	|-------|-------|-----------|
+	|:-------|:-------|:-----------|
 	|, .|	9,999.99|	Commas and decimal points will pass through wherever they are included.	|		
 	|$|	$999.99|	Leading dollar sign.|			
 	0	99.99	Leading or trailing 0.			
