@@ -38,7 +38,7 @@ Output: Character.
 
 Example: Format the number 198 with a dollar sign and penny specification.													
 													
-	SELECT TO_CHAR(198,'$999.99') FROM DUAL;													
+	SELECT TO_CHAR(198,'$999.99') FROM DUAL;		
 													
 |TO_CHAR(198,'$999.99')|													
 |:--------------------:|
@@ -49,13 +49,13 @@ Example: Format the number 198 with a dollar sign and penny specification.
 
 TO_CHAR(DATE)
 --------------------------
-Syntax: TO_CHAR(d, format_model, nls_parms)													
+Syntax: TO_CHAR(d, format_model, nls_parms)	
 Parameters: d is a date or a date interval (required). 
 The parameter format_model is optional and can be used to format data in a variety of ways. 
 The nls_parms parameter is the same as you saw earlier for the TO_NUMBER function.													
 |Element|Description|
 |:-----:|:---------:|
-|AD/A.D.||													
+|AD/A.D.|-|
 |BC/B.C.|Anno Domini or Before Christ indicator, with or without periods.|							
 |AM/A.M.|													
 |PM/P.M.|Morning or afternoon hours, with or without periods.|
