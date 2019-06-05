@@ -65,16 +65,14 @@ The nls_parms parameter is the same as you saw earlier for the TO_NUMBER functio
 |DAY|The name of the day spelled out.|												
 |DD|Day of the month, 1 through 31.|												
 |DDD|Day of the year, 1 through 366.|												
-|DL|Long date format, as determined by the NLS_DATE_FORMAT parameter.| 
-The appearance is determined by the NLS_TERRITORY and NLS_LANGUAGE parameters. Sample AMERICAN_AMERICA output is "Saturday, July 27, 2019."												
+|DL|Long date format, as determined by the NLS_DATE_FORMAT parameter.|
 |DS|Short date format. Appearance is determined by the NLS_TERRITORY and NLS_LANGUAGE parameters.| 
-Sample AMERICAN_AMERICA output is "7/27/2019."												
-|DY|Abbreviated name of day, such as SUN, MON, TUE, and so on.|												
-E	Abbreviated era name.												
-EE	Full era name.												
-FF	Fractional seconds.												
-FM	Used in combination with other elements to direct the suppression of leading or trailing blanks.												
-FX	Exact matching between the character data and the format model.												
+|DY|Abbreviated name of day, such as SUN, MON, TUE, and so on.|										
+|E|Abbreviated era name.												
+|EE|Full era name.|												
+|FF|Fractional seconds.	|											
+|FM|Used in combination with other elements to direct the suppression of leading or trailing blanks.|				
+|FX|Exact matching between the character data and the format model.|											
 HH, HH12	Hour of the day, 1 through 12 (both are identical). 12 midnight is represented as 12.												
 HH24	Hour of the day, 1 through 24. 12 midnight is represented by 00.												
 IW	Week of the year, 1 through 53.												
