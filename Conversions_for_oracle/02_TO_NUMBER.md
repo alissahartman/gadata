@@ -19,13 +19,12 @@ Here is a similar example showing the use of the nls_parms parameter:
 	17000.23					
 						
 In this example, the incoming value shows a decimal point to mark “thousands” and the comma to mark the decimal point. The nls_parms value clarifies this to the TO_NUMBER function, along with the format mask, and the incoming value is interpreted and translated, as shown in the displayed output.						
-	|DATE|CLASS|DATE|CLASS|
-|:---|:----|:---|:----|					
+		
 						
-	|Element|Example|Description|
-	|:------|:------|:----------|
-	|, .|9,999.99|Commas and decimal points will pass through wherever they are included.|		
-	|$|$999.99|Leading dollar sign.|
+|Element|Example|Description|
+|:------|:------|:----------|
+|, .|9,999.99|Commas and decimal points will pass through wherever they are included.|		
+|$|$999.99|Leading dollar sign.|
 	
 	
 	0	99.99	Leading or trailing 0.			
