@@ -34,24 +34,22 @@ In this example, the incoming value shows a decimal point to mark â€œthousandsâ€
 |L|L999|Returns the local currency symbol.|			
 |MI|999MI|Returns negative value with trailing minus sign; returns positive value with a trailing blank.|			
 |PR|999PR|Returns negative values in angle brackets.|			
-	RN					
-	rn	RN	Returns values in Roman numerals, uppercase. Put RN in lowercase (as in "rn") for Roman numerals in lowercase.			
-	S (prefix)	S9999	Returns negative values with a leading minus sign, positive values with a leading positive sign.			
-	Note: Can appear only in the first or last position of a format mask.					
-	S (suffix)	9999S	Returns negative values with a trailing minus sign, positive values with a trailing positive sign.			
-	Note: Can appear only in the first or last position of a format mask.					
-	TM	TM	The text minimum number format model returns the smallest number of characters possible.			
-	U	U999	Returns the Euro currency symbol or whatever is indicated by the NLS_DUAL_CURRENCY parameter.			
-	V	999V99	Returns a value multiplied by 10n, where n is the number of 9s after the V.			
-	X	XXXX	Returns the hexadecimal value.			
+|rn|RN|Returns values in Roman numerals, uppercase. Put RN in lowercase (as in "rn") for Roman numerals in lowercase.|			
+|S(prefix)|S9999|Returns negative values with a leading minus sign, positive values with a leading positive sign.|			
+|S(suffix)|9999S|Returns negative values with a trailing minus sign, positive values with a trailing positive sign.|			
+|TM|TM|The text minimum number format model returns the smallest number of characters possible.|			
+|U|U999|Returns the Euro currency symbol or whatever is indicated by the NLS_DUAL_CURRENCY parameter.|			
+|V|999V99|Returns a value multiplied by 10n, where n is the number of 9s after the V.|			
+|X|XXXX|Returns the hexadecimal value.|			
+Warning: Only one period is allowed per format mask.					
+
+There is an optional third parameter representing NLS settings. It allows you to identify any of the three NLS parameters defined in Table 6-2. If included, the third parameter for TO_NUMBER consists of a single string that encompasses any one or more of those three NLS parameters. For example, the following is one example of the nls_parms parameter that provides a specification of two of the NLS parameters:					
 						
-	Warning: Only one period is allowed per format mask.					
-	There is an optional third parameter representing NLS settings. It allows you to identify any of the three NLS parameters defined in Table 6-2. If included, the third parameter for TO_NUMBER consists of a single string that encompasses any one or more of those three NLS parameters. For example, the following is one example of the nls_parms parameter that provides a specification of two of the NLS parameters:					
-						
-	NLS Parameter	Description				
-	NLS_NUMERIC_CHARACTERS = 'dg'	d = decimal character (see D in Table 6-1)				
-	g = group separator (see G in Table 6-1)					
-	NLS_CURRENCY = 'text'	text = local currency symbol (see L in Table 6-1)				
-	NLS_ISO_CURRENCY = 'currency'	currency = international currency symbol (see C in Table 6-1)				
+|NLS Parameter|Description|				
+|-------------|-----------|	
+|NLS_NUMERIC_CHARACTERS = 'dg'|d = decimal character (see D in Table 6-1)|				
+|g|group separator (see G in Table 6-1)|					
+|NLS_CURRENCY|'text = local currency symbol (see L in Table 6-1)|				
+|NLS_ISO_CURRENCY|'currency'currency = international currency symbol (see C in Table 6-1)|				
 						
 						
