@@ -10,7 +10,7 @@ There are three versions of TO_CHAR:
 
 The following sections describe each of the three TO_CHAR functions.									
 													
-TO_CHAR—CHARACTER
+TO_CHAR(CHARACTER)
 --------------------
 Syntax: TO_CHAR(c)													
 Parameters: c is either an NCHAR, an NVARCHAR2, a CLOB, or an NCLOB.									Process: Transforms the incoming parameter into a VARCHAR2.										Output: VARCHAR2.													
@@ -38,7 +38,6 @@ Example: Format the number 198 with a dollar sign and penny specification.
 SELECT TO_CHAR(198,'$999.99') FROM DUAL;													
 													
 TO_CHAR(198,'$999.99')													
-----------------------													
 $198.00													
 TO_CHAR—DATE													
 Syntax: TO_CHAR(d, format_model, nls_parms)													
