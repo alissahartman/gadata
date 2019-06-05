@@ -4,9 +4,9 @@ The TO_CHAR function converts data from various data types to character data.
 
 There are three versions of TO_CHAR: 
 
-        TO_CHAR(Character)												
-	TO_CHAR(Number)												
-	TO_CHAR(Date)												
+	TO_CHAR(Character)			
+	TO_CHAR(Number)
+	TO_CHAR(Date)	
 
 The following sections describe each of the three TO_CHAR functions.									
 													
