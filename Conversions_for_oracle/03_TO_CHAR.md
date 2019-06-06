@@ -93,9 +93,9 @@ The nls_parms parameter is the same as you saw earlier for the TO_NUMBER functio
 |SSSS|Seconds past midnight, 0 through 86399.|											
 |TS|The short time format. Allowable only when specified with the DL or DS format model element, separated by white space.|		
 |TZD|Abbreviated time zone with daylight saving time. Valid only in timestamp and interval formats. Examples: EST, CMT.|		
-|TZH|Time zone hour. Not valid in DATE data types; valid only in timestamp and interval formats. 00 through 12.|												
-TZM	Time zone minute. Valid only in timestamp and interval formats. 00 through 59.												
-TZR	Time zone region information. Not valid in DATE data types; valid only in timestamp and interval formats. Example: America/Los_Angeles.												
+|TZH|Time zone hour. Not valid in DATE data types; valid only in timestamp and interval formats. 00 through 12.|
+|TZM|Time zone minute. Valid only in timestamp and interval formats. 00 through 59.|												
+|TZR|Time zone region information. Not valid in DATE data types; valid only in timestamp and interval formats. Example: America/Los_Angeles.|												
 WW	The week of the year, 1 through 53. Week 1 starts on the first day of the year and ends on the seventh day of the year.												
 W	The week of the month, 1 through 5. Week 1 starts on the first day of the month and ends on the seventh day of the month.												
 X	Local radix character. This is the character used in a numeric representation to separate an integer from its fractional part. In base 10 notation, the radix character is a decimal point, as in 17.2, where the decimal point separates the integer 17 from its fractional part of 0.2.												
