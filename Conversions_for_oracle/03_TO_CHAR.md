@@ -81,19 +81,19 @@ The nls_parms parameter is the same as you saw earlier for the TO_NUMBER functio
 |IYY|Last one, two, or three digits of the ISO year.|											
 |J|Julian day, counted as the number of days since January 1, 4712 B.C.|								
 |MI|Minute. 0 through 59.|												
-MM	Month in double digits, 01 through 12.												
-MON	Abbreviated name of month, such as JAN, FEB, MAR.												
-MONTH	Name of month spelled out.												
-PR	If negative, numbers are enclosed within angle brackets (<>). If positive, returned with leading and trailing spaces. PR follows specification, for example: 9999PR.												
-Q	Quarter of year.												
-RM	Roman numeral month.												
-RR	Accepts twentieth-century dates in the twenty-first century using only two digits. 00 through 49 is interpreted as 2000 through 2049. 50 through 99 is interpreted as 1950 through 1999.												
-RRRR	The four-digit year. If provided a two-digit year, it returns the same value as RR.												
-SS	Seconds, 0 through 59.												
-SSSS	Seconds past midnight, 0 through 86399.												
-TS	The short time format. Allowable only when specified with the DL or DS format model element, separated by white space.												
-TZD	Abbreviated time zone with daylight saving time. Valid only in timestamp and interval formats. Examples: EST, CMT.												
-TZH	Time zone hour. Not valid in DATE data types; valid only in timestamp and interval formats. 00 through 12.												
+|MM|Month in double digits, 01 through 12.|												
+|MON|Abbreviated name of month, such as JAN, FEB, MAR.|											
+|MONTH|Name of month spelled out.|												
+|PR|If negative, numbers are enclosed within angle brackets (<>). If positive, returned with leading and trailing spaces. PR follows specification, for example: 9999PR.												
+|Q|Quarter of year.|												
+|RM|Roman numeral month.|												
+|RR|Accepts twentieth-century dates in the twenty-first century using only two digits. 00 through 49 is interpreted as 2000 through 2049. 50 through 99 is interpreted as 1950 through 1999.|										
+|RRRR|The four-digit year. If provided a two-digit year, it returns the same value as RR.|						
+|SS|Seconds, 0 through 59.|												
+|SSSS|Seconds past midnight, 0 through 86399.|											
+|TS|The short time format. Allowable only when specified with the DL or DS format model element, separated by white space.|		
+|TZD|Abbreviated time zone with daylight saving time. Valid only in timestamp and interval formats. Examples: EST, CMT.|		
+|TZH|Time zone hour. Not valid in DATE data types; valid only in timestamp and interval formats. 00 through 12.|												
 TZM	Time zone minute. Valid only in timestamp and interval formats. 00 through 59.												
 TZR	Time zone region information. Not valid in DATE data types; valid only in timestamp and interval formats. Example: America/Los_Angeles.												
 WW	The week of the year, 1 through 53. Week 1 starts on the first day of the year and ends on the seventh day of the year.												
