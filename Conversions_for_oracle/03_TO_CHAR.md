@@ -72,15 +72,15 @@ The nls_parms parameter is the same as you saw earlier for the TO_NUMBER functio
 |EE|Full era name.|												
 |FF|Fractional seconds.	|											
 |FM|Used in combination with other elements to direct the suppression of leading or trailing blanks.|				
-|FX|Exact matching between the character data and the format model.|											
-HH, HH12	Hour of the day, 1 through 12 (both are identical). 12 midnight is represented as 12.												
-HH24	Hour of the day, 1 through 24. 12 midnight is represented by 00.												
-IW	Week of the year, 1 through 53.												
-I													
-IY													
-IYY	Last one, two, or three digits of the ISO year.												
-J	Julian day, counted as the number of days since January 1, 4712 B.C.												
-MI	Minute. 0 through 59.												
+|FX|Exact matching between the character data and the format model.|									
+|HH|HH12 Hour of the day, 1 through 12 (both are identical). 12 midnight is represented as 12.|						
+|HH24|Hour of the day, 1 through 24. 12 midnight is represented by 00.|									
+|IW|Week of the year, 1 through 53.|												
+|I|													
+|IY|													
+|IYY|Last one, two, or three digits of the ISO year.|											
+|J|Julian day, counted as the number of days since January 1, 4712 B.C.|								
+|MI|Minute. 0 through 59.|												
 MM	Month in double digits, 01 through 12.												
 MON	Abbreviated name of month, such as JAN, FEB, MAR.												
 MONTH	Name of month spelled out.												
